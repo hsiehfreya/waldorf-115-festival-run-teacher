@@ -64,11 +64,15 @@ ol ol, ol ul { margin:4px 0; }
 footer { text-align:center; padding:10px 16px 24px; color:var(--primary); }
 footer .org { font-family:"Noto Serif TC",serif; font-size:18px; }
 footer .sub { font-size:12px; letter-spacing:.15em; opacity:.7; margin-top:2px; }
+.shots { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; margin:6px 0; }
+.shots figure { margin:0; background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+.shots img { width:100%; display:block; }
+.shots figcaption { font-size:12px; text-align:center; padding:2px 0; color:var(--ink2); }
 @media (max-width:600px) {
   .hero h1 { font-size:24px; }
   td { padding:6px 10px; } td.t { width:36%; white-space:normal; }
 }
-@media print { #rules, #class { break-before:page; } nav.toc { display:none; } body { background:#FAF6F0; } section { break-inside:auto; } }
+@media print { #rules, #class, #parking { break-before:page; } nav.toc { display:none; } body { background:#FAF6F0; } section { break-inside:auto; } }
 </style>
 </head>
 <body>
@@ -84,6 +88,7 @@ footer .sub { font-size:12px; letter-spacing:.15em; opacity:.7; margin-top:2px; 
     <a href="#schedule">1 當日時程</a>
     <a href="#rules">2 規則說明</a>
     <a href="#class">3 班級注意事項</a>
+    <a href="#parking">4 交通及停車</a>
   </nav>
 
   <!-- ========== 1 當日時程 ========== -->
@@ -207,6 +212,32 @@ footer .sub { font-size:12px; letter-spacing:.15em; opacity:.7; margin-top:2px; 
     </ol>
 
     <p style="text-align:center; margin-top:20px; color:var(--secondary);">謝謝各位導師的協助及配合！</p>
+  </section>
+
+  <!-- ========== 4 交通及停車 ========== -->
+  <section id="parking">
+    <h2><span class="no">4</span>交通及停車</h2>
+    <div class="callout">
+      活動當天請<b>避免停車於小綠門與照安路區域</b>，家長請至<b>冬山國中</b>停車。建議住在附近的學生，當天先暖身走路上學。
+    </div>
+    <h3>一、請避免停車：小綠門與照安路區域（紅線標示）</h3>
+    <div class="shots">
+      <figure><a href="assets/停車-避免1.jpg"><img src="assets/停車-避免1.jpg" alt="小綠門與照安路區域避免停車（紅線標示）1"/></a></figure>
+      <figure><a href="assets/停車-避免2.jpg"><img src="assets/停車-避免2.jpg" alt="小綠門與照安路區域避免停車（紅線標示）2"/></a></figure>
+    </div>
+    <h3>二、可停車：學校附近路旁周邊區域（香南路及香和路）</h3>
+    <div class="shots">
+      <figure><a href="assets/停車-路旁1.jpg"><img src="assets/停車-路旁1.jpg" alt="香南路路旁停車1"/></a></figure>
+      <figure><a href="assets/停車-路旁2.jpg"><img src="assets/停車-路旁2.jpg" alt="香南路路旁停車2"/></a></figure>
+      <figure><a href="assets/停車-路旁3.jpg"><img src="assets/停車-路旁3.jpg" alt="香和路路旁停車1"/></a></figure>
+      <figure><a href="assets/停車-路旁4.jpg"><img src="assets/停車-路旁4.jpg" alt="香和路路旁停車2"/></a></figure>
+    </div>
+    <h3>三、可停車：冬山國小與冬山國中附近</h3>
+    <div class="shots">
+      <figure><a href="assets/停車-冬山國小1.jpg"><img src="assets/停車-冬山國小1.jpg" alt="冬山國小附近停車1"/></a><figcaption>冬山國小</figcaption></figure>
+      <figure><a href="assets/停車-冬山國小2.jpg"><img src="assets/停車-冬山國小2.jpg" alt="冬山國小附近停車2"/></a><figcaption>冬山國小</figcaption></figure>
+      <figure><a href="assets/停車-冬山國中.jpg"><img src="assets/停車-冬山國中.jpg" alt="冬山國中附近停車"/></a><figcaption>冬山國中</figcaption></figure>
+    </div>
   </section>
 </main>
 <footer>
